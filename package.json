@@ -1,0 +1,53 @@
+{
+  "name": "advent-of-code-2019",
+  "version": "0.0.1",
+  "description": "Advent of Code 2019 solutions",
+  "license": "MIT",
+  "repository": "skovhus/advent-of-code-2019",
+  "author": {
+    "name": "Kenneth Skovhus",
+    "email": "kenneth.skovhus@gmail.com",
+    "url": "https://github.com/skovhus"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf coverage *.log",
+    "lint": "eslint . --ext js,ts,tsx --fix",
+    "test": "jest --runInBand",
+    "test:coverage": "yarn test -- --coverage",
+    "test:watch": "yarn test -- --watch",
+    "verify": "yarn lint && yarn test:cov"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "eslint": "^6.7.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.5",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-simple-import-sort": "^5.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "testEnvironment": "node"
+  }
+}
