@@ -1,7 +1,7 @@
 {
   "name": "advent-of-code-2019",
   "version": "0.0.1",
-  "description": "Advent of Code 2019 solutions",
+  "description": "Advent of Code 2019 solutions using TypeScript",
   "license": "MIT",
   "repository": "skovhus/advent-of-code-2019",
   "author": {
@@ -16,10 +16,9 @@
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf coverage *.log",
     "lint": "eslint . --ext js,ts,tsx --fix",
-    "test": "jest --runInBand",
-    "test:coverage": "yarn test -- --coverage",
-    "test:watch": "yarn test -- --watch",
-    "verify": "yarn lint && yarn test:cov"
+    "test": "jest --runInBand --coverage",
+    "test:watch": "yarn test --watch",
+    "verify": "yarn lint && yarn test"
   },
   "dependencies": {},
   "devDependencies": {

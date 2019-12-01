@@ -1,5 +1,5 @@
-## Advent of code 2019 solutions 🎅
+## Advent of code 2019 solutions 🎅🎄
 
-I'll try to help Santa this year using TypeScript and possibly ReasonML.
+I'll try to help Santa this year using TypeScript.
 
-https://adventofcode.com/
+Join me at https://adventofcode.com/
