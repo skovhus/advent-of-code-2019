@@ -17,7 +17,7 @@
     "clean": "rm -rf coverage *.log",
     "lint": "eslint . --ext js,ts,tsx --fix",
     "test": "jest --runInBand --coverage",
-    "test:watch": "yarn test --watch",
+    "test:watch": "jest --watch",
     "verify": "yarn lint && yarn test"
   },
   "dependencies": {},
